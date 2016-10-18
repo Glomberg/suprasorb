@@ -123,6 +123,7 @@ textarea:focus, input:focus{
 body {
 	background: #091217;
 	color: #FFFFFF;
+	font-family: 'Calibri', sans-serif;
 }
 a {
 	
@@ -135,6 +136,10 @@ a:visited {
 }
 
 /* Typographic */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	line-height: 1.14;
+}
 h1 {
 	font-family: 'FMBolyarOrnate';
 	font-size: 27px;
@@ -143,16 +148,271 @@ h1 {
 /* Custom styles */
 header {
 	padding-top: 28px;
-	background: url('../images/header-bg.png') no-repeat center top;
+	background: url('../images/header-bg.png') no-repeat center top #080C11;
 	min-height: 560px;
 }
 	header .logo {
 		margin-bottom :80px;
 		display: inline-block;
 	}
+	header .row {
+		margin-bottom: 63px;
+	}
 	header .row > div:last-child {
 		text-align: right;
 	}
 	header span {
 		color: #FAA81E;
+		font-size: 27px;
+		font-family: 'FMBolyarOrnate';
 	}
+	header h1 span {
+		font-size: 43px;
+	}
+.header-perks {
+	font-size: 24px;
+	padding-top: 45px;
+}
+	.header-perks li {
+		padding-left: 22px;
+		background: url('../images/header-perks-list-style.png') no-repeat left 8px;
+		line-height: 1.25;
+	}
+.socials {
+	font-size: 0 !important;
+	margin-bottom: 11px;
+}
+	.socials li {
+		display: inline-block;
+		margin-right: 30px;
+	}
+		.socials li:last-child {
+			margin-right: 0;
+		}
+	.socials a {
+		display: block;
+		height: 41px;
+		width: 41px;
+		background: url('../images/socials.png') no-repeat left center;
+		transition: opacity 0.3 ease-in-out;
+	}
+		.socials li:nth-child(1) a {
+			background-position: left center;
+		}
+		.socials li:nth-child(2) a {
+			background-position: -70px center;
+		}
+		.socials li:nth-child(3) a {
+			background-position: right center;
+		}
+	.socials a:hover {
+		opacity: 0.75;
+	}
+.slogan {
+	color: #FAA81E;
+	font-size: 24px;
+	margin-bottom: 24px;
+	text-align: center;
+}
+	.slogan span {
+		font-family: 'Calibri';
+	}
+.contacts {
+	margin-bottom: 16px;
+}
+	.contacts li {
+		margin-bottom: 5px;
+	}
+	.contacts a {
+		font-size: 25px;
+		color: #FFFFFF;
+	}
+	
+.button {
+	display: inline-block;
+	color: #898989;
+	font-size: 15px;
+	background: transparent;
+	border: 2px solid #898989;
+	border-radius: 2px;
+	height: 30px;
+	line-height: 24px;
+	padding: 0 23px;
+	transition: background 0.2s ease-in-out, color 0.3s ease-in-out; 
+}
+	.button:hover {
+		background: #898989;
+		color: #FAA81E;
+	}
+	
+.main-container {
+	background: url('../images/main-container-bg.png') no-repeat center 44px;
+	min-height: 256px;
+	padding-top: 40px;
+	margin-bottom: 53px;
+}
+	.main-container .description {
+		text-align: center;
+		font-size: 30px;
+		font-family: 'Calibri-Bold';
+		margin-bottom: 45px;
+	}
+	.main-container .buttons {
+		text-align: center;
+		padding-top: 48px;
+	}
+	.main-container .button {
+		background: #091217;
+		height: 77px;
+		width: 40%;
+		color: #FAA81E;
+		font-size: 24px;
+		border: 1px solid #FAA81E;
+		vertical-align: middle;
+		margin-bottom: 42px;
+		padding: 0;
+		padding-top: 21px;
+		transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+	}
+		.main-container .button:first-child {
+			margin-right: 4%;
+		}
+		.main-container .button:nth-child(2) {
+			padding-top: 10px;
+		}
+		.main-container .button:last-child {
+			width: 84%;
+		}
+		.main-container .button:hover {
+			background: #FAA81E;
+			color: #091217;
+			border-color: #091217;
+		}
+	.made-in {
+		color: #D1C6A4;
+		font-size: 29px;
+		text-align: center;
+		padding-top: 32px;
+	}
+	
+.contacts-container {
+	background: url('../images/contacts-container-bg.png') no-repeat center bottom;
+}
+.contacts-container-border {
+	background: url('../images/contacts-container-border.png') repeat-x 0 0;
+	height: 4px;
+	text-align: center;
+	margin-bottom: 70px;
+}
+.contacts-heading {
+	background: #091217;
+	padding: 0 80px;
+	position: relative;
+	top: -7px;
+	font-family: 'FMBolyarOrnate';
+	font-size: 24px;
+	margin: 0 auto;
+	color: #FAA81E;
+	display: inline-block;
+}
+
+.grey-background {
+	background: #434242;
+	border-radius: 30px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	margin-bottom: 90px;
+}
+.blue-background {
+	background: #091217;
+	border-radius: 30px;
+	width: calc(100% - 45px);
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+	.contacts-container form {
+		width: 70%;
+		margin: 0 auto;
+		text-align: left;
+		font-size: 18px;
+	}
+		.contacts-container form > input {
+			display: block;
+			height: 50px;
+			width: 100%;
+			margin-bottom: 17px;
+			padding-left: 12px;
+			color: #000000;
+		}
+		.contacts-container form > input[type="submit"] {
+			width: 70%;
+			height: 38px;
+			margin: 0 auto 17px;
+			background: #FAA81E;
+			transition: opacity 0.3s ease-in-out;
+		}
+			.contacts-container form > input[type="submit"]:hover {
+				opacity: 0.75;
+			}
+		.contacts-container form > textarea {
+			height: 100px;
+			resize: none;
+			width: 100%;
+			padding-left: 12px;
+			padding-top: 12px;
+			color: #000000;
+			margin-bottom: 17px;
+		}
+		.contacts-container form > div {
+			font-size: 40px;
+			font-family: 'Calibri-Bold';
+			margin-bottom: 38px;
+			text-align: center;
+		}
+	.contacts-container .blue-background .contacts {
+		padding-top: 6px;
+		width: 300px;
+		margin: 0 auto 20px;
+	}
+		.contacts-container .blue-background .contacts li {
+			margin-bottom: 7px;
+			background: url('../images/contacts-list-ico.png') no-repeat left top;
+		}
+		.contacts-container .blue-background .contacts li:last-child {
+			background-position: left bottom;
+		}
+	.contacts-container .socials {
+		margin-bottom: 23px;
+	}
+footer {
+	border-top: 1px solid #2B2A29;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	min-height: 170px;
+	font-size: 18px;
+}
+	footer .contacts a{
+		font-size: 21px;
+	}
+	.footer-links {
+		font-size: 21px;
+		color: #FFFFFF;
+		display: inline-block;
+		line-height: 21px;
+		padding-left: 30px;
+		background: url('../images/footer-lincs-ico.png') no-repeat left bottom;
+		margin-bottom: 10px;
+	}
+		.footer-links:hover {
+			color: #FAA81E;
+			background-position: left top;
+		}
+	footer .copyright {
+		text-align: center;
+		padding-top: 20px;
+	}
+		footer .copyright > div {
+			margin-bottom: 7px;
+		}
